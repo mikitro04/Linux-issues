@@ -42,7 +42,10 @@ Così tutti i file che hai aggiunto verranno riconosciuti da Github, poi scrivi:
 git commit -a -m "Your upgrade"
 ```
 
-Questo comando esegue il commit di tutti i cambiamenti effettuati nella repository, senza questo non credo sia possibile caricare i salvataggi.
+
+Sostituisci `Your upgrade` con qualcosa che faccia capire cosa hai aggiornato (non necessariamente qualcosa di serio).
+
+Questo comando esegue il commit di tutti i cambiamenti effettuati nella repository (`-a`), senza questo non credo sia possibile caricare i salvataggi. `-m` serve per inserire il messaggio
 
 Infine devi inserire:
 
