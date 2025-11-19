@@ -24,7 +24,7 @@ Prima di tutto:
     * Poi in **Expiration** inserisci la durata che può anche essere anche senza fine
     * In `Repository access` seleziona a quale repo è destinato il token
     * Infine inserisci i permessi
-* Una volta generato il token **NON PERDERE IL TOKEN** perchè non lo puoi recuperare!
+* Una volta generato il token **NON PERDERLO** perchè non lo potrai recuperare!
 
 Il token sarà qualcosa del tipo `github_path_...`
 
@@ -69,7 +69,7 @@ E se pensi che la password sia la tua password di github, mi dispiace ma sei sta
 Per salvare le credenziali infine digita:
 
 ```bash
-git config credential.helper store
+git config --global credential.helper store
 ```
 
 ## Come fai ad aggiornare la tua cartella locale da quello che vedi dal sito?
@@ -80,14 +80,37 @@ Abbastanza semplicemente scrivi
 git pull
 ```
 
+### Rimuovere dei file e fare il commit
+
+Come per `git add file1 file2 ..` esiste anche il comando `git rm file1 file2 ..` che permette di riconoscere dal commit quali file deve scartare per eseguire un upgrade della repository.
+
+Prima di tutto fai `git rm file` o `git rm -r directory/` per far capire al commit quali file eliminare,
+
+Poi lo stesso comando ma senza `git` per eliminarli anche in locale
+
+Infine il commit:
+
+```bash
+git commit -a -m "Your upgrade"
+```
+
+E il push:
+
+
+```bash
+git push
+```
+
 ## Soliti problemi
+
+### Forzatura del push/pull
 
 Se ti di ce per esempio che stai cercando di pushare in una repository più aggiornata rispetto a quella che hai pullato prima hai due opzioni:
 
-### 1. Opzione sconsigliata
+#### 1. Opzione sconsigliata
 Puoi creare un nuovo branch ma non so nemmeno come si fa e non voglio saperlo
 
-### 2. Opzione consigliata
+#### 2. Opzione consigliata
 Metodo _brute force,_ esegui:
 
 ```bash
@@ -100,4 +123,14 @@ Stessa cosa per il pull, quindi hai aggiornato la tua cartella locale e vuoi car
 
 ```bash
 git pull --force
+```
+
+### La clone non funziona (errore 403)
+
+Se il comando `git clone https://github.com/your-username/your-repository` non funziona e il teminale restituisce `Errore 403` niente panico.
+
+Prendi il token che hai generato prima e inserisci il seguente comando:
+
+```bash
+git clone https://your-username:token-generato-prima@link-repository
 ```
