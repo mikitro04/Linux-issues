@@ -75,9 +75,9 @@ gg update
  - `git add .` è un comando molto potente, se hai dei file che di cui non vuoi fare il commit (e.g. file di log, ecc..) non conviene usare questo alias.
 
  - Se vuoi scrivere un messaggio con parentesi potrebbe darti errore, in tal caso usa le virgolette "" per scrivere il tuo messaggio
-
-```bash
-gg "update (example)"
-```
-
-Assicurati sempre di avere un file `.gitignore` ben configurato nel tuo progetto per evitare di caricare file spazzatura per sbaglio.
+ 
+ ```bash
+ gg "update (example)"
+ ```
+ 
+ Assicurati sempre di avere un file `.gitignore` ben configurato nel tuo progetto per evitare di caricare file spazzatura per sbaglio.
