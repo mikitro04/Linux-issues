@@ -42,9 +42,9 @@ Questa guida fa esattamente quello, creare un alias temporaneo non è complicato
   alias routine='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y'
   ```
 
-4. Per uscire premi `Ctrl+o`, `Invio` e infine `Ctrl+x`
+  Per uscire premi `Ctrl+o`, `Invio` e infine `Ctrl+x`
 
-5. Infine sempre da terminale scrivi
+## 4. Infine sempre da terminale scrivi:
 
    ```bash
    source ~/.bashrc
