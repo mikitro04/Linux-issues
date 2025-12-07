@@ -8,39 +8,39 @@ Questa guida fa esattamente quello, creare un alias temporaneo non è complicato
 
 ## 1. Primo passo
 
- Per creare un **alias** anzitutto devi decidere per cosa ti serve, per esempio il primo alias che ho creato l'ho chiamato `routine`, e cosa faceva?
-
- ```bash
- sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
- ```
-
- Un passo che considero "obbligatorio" ogni volta che accendo il computer, ma scrivere tutta sta mercanzia ogni volta è stressante, quindi ora vediamo come creare un alias che faccia questo comando automaticamente.
-
- (Ovviamente il comando sopra indicato contiene la keyword `sudo`, questo implica che a seguire il terminale chiederà la password del sistema)
+   Per creare un **alias** anzitutto devi decidere per cosa ti serve, per esempio il primo alias che ho creato l'ho chiamato `routine`, e cosa faceva?
+ 
+   ```bash
+   sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
+   ```
+  
+   Un passo che considero "obbligatorio" ogni volta che accendo il computer, ma scrivere tutta sta mercanzia ogni volta è stressante, quindi ora vediamo come creare un alias che faccia questo comando automaticamente.
+  
+   (Ovviamente il comando sopra indicato contiene la keyword `sudo`, questo implica che a seguire il terminale chiederà la password del sistema)
 
  ## 2. Creazione dell'alias
 
-Per creare un nuovo alias hai bisogno di 2 cose: un `nome` con cui sostituire il comando che vuoi e ovviamente il `comando` da rimpiazzare.
-
-Prendiamo come esempio il comando di prima, che vogliamo rimpiazzare con `routine`
-
-1. Apri il terminale
-2. Scrivi:
-```bash
-nano ~/.bashrc
-```
-3. Ora sei nel file in cui inserire tutti gli alias che vuoi e infondo al file scrivi:
-```bash
-alias nameAlias='command'
-```
-
-**N.B.** Usa esattamente questa sintassi (spazi inclusi)
-
-Questo è l'esempio:
-
-```bash
-alias routine='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y'
-```
+  Per creare un nuovo alias hai bisogno di 2 cose: un `nome` con cui sostituire il comando che vuoi e ovviamente il `comando` da rimpiazzare.
+  
+  Prendiamo come esempio il comando di prima, che vogliamo rimpiazzare con `routine`
+  
+  1. Apri il terminale
+  2. Scrivi:
+  ```bash
+  nano ~/.bashrc
+  ```
+## 3. Ora sei nel file in cui inserire tutti gli alias che vuoi e infondo al file scrivi:
+  ```bash
+  alias nameAlias='command'
+  ```
+  
+  **N.B.** Usa esattamente questa sintassi (spazi inclusi)
+  
+  Questo è l'esempio:
+  
+  ```bash
+  alias routine='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y'
+  ```
 
 4. Per uscire premi `Ctrl+o`, `Invio` e infine `Ctrl+x`
 
