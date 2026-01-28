@@ -8,4 +8,5 @@ Di seguito l'elenco dei tutorial che ho pubblicato:
 4. Creare delle `repository annidate` per GitHub [--> Qui](/git/Nest_github_repository.md)
 5. Creare delle `shortcut sul desktop` per Linux [--> Qui](/general-Linux/Create_a_desktop_shortcut.md)
 6. Aggiungere .desktop nella `griglia delle applicazioni` [--> Qui](/general-Linux/Add_application_to_AppGrid.md)
-7. Installare **Steam** [--> Qui](/gaming-Linux/Install_Steam.md)
+7. Installare un `software AppImage` [--> Qui](/general-Linux/InstallAppImage.md)
+8. Installare **Steam** [--> Qui](/gaming-Linux/Install_Steam.md)
