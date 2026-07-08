@@ -11,10 +11,11 @@ Questa guida fa esattamente quello, creare un alias temporaneo non è complicato
    Per creare un **alias** anzitutto devi decidere per cosa ti serve, per esempio il primo alias che ho creato l'ho chiamato `routine`, e cosa faceva?
  
    ```bash
-   sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y
+   sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean && clear && apt list --upgradable
    ```
   
-   Un passo che considero "obbligatorio" ogni volta che accendo il computer, ma scrivere tutta sta mercanzia ogni volta è stressante, quindi ora vediamo come creare un alias che faccia questo comando automaticamente.
+   Un passo che considero "obbligatorio" ogni volta che accendo il computer, ma scrivere tutta sta mercanzia ogni volta è stressante, quindi ora vediamo come creare un alias che faccia questo comando automaticamente.  
+   NB questo comando mi permette di aggiornare tutto e visualizzare eventualmente pacchetti non aggiornati.
   
    (Ovviamente il comando sopra indicato contiene la keyword `sudo`, questo implica che a seguire il terminale chiederà la password del sistema)
 
