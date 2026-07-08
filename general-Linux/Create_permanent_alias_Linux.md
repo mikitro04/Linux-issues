@@ -39,7 +39,7 @@ Questa guida fa esattamente quello, creare un alias temporaneo non è complicato
   Questo è l'esempio:
   
   ```bash
-  alias routine='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y'
+  alias routine='sudo apt update && sudo apt full-upgrade -y && sudo apt autoremove -y && sudo apt autoclean && clear && apt list --upgradable'
   ```
 
   Per uscire premi `Ctrl+o`, `Invio` e infine `Ctrl+x`
