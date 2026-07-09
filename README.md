@@ -14,6 +14,8 @@ Di seguito l'elenco dei tutorial che ho pubblicato:
 1. Creare delle `shortcut sul desktop` per Linux [--> Qui](/general-Linux/Create_a_desktop_shortcut.md)
 1. Aggiungere .desktop nella `griglia delle applicazioni` [--> Qui](/general-Linux/Add_application_to_AppGrid.md)
 1. Installare un `software AppImage` [--> Qui](/general-Linux/InstallAppImage.md)
-1. Configurare `Ctrl+BackSpace` su terminale [-->Qui](/general-Linux/Ctrl+BackSpace.md)
+1. Configurare `Ctrl+BackSpace` su terminale [--> Qui](/general-Linux/Ctrl+BackSpace.md)
 ## Linux Gaming
 1. Installare **Steam** [--> Qui](/gaming-Linux/Install_Steam.md)
+## Altri problemi non relativi a Linux
+1. Uscire da un team di Microsoft Teams [--> Qui](/other-issues/leave_a_microsoft_team.md)
